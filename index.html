@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ветеринарная клиника "Айболит"</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script>
+		function showHide(element_id) {
+                //Если элемент с id-шником element_id существует
+                if (document.getElementById(element_id)) { 
+                    //Записываем ссылку на элемент в переменную obj
+                    var obj = document.getElementById(element_id); 
+                    //Если css-свойство display не block, то: 
+                    if (obj.style.display != "block") { 
+                        obj.style.display = "block"; //Показываем элемент
+                    }
+                    else obj.style.display = "none"; //Скрываем элемент
+                }
+                //Если элемент с id-шником element_id не найден, то выводим сообщение
+                else alert("Элемент с id: " + element_id + " не найден!"); 
+            }   
+	</script>
+</head>
+<body>
+	<header>
+		<section>
+			<address>
+				<p>тел. 8-960-852-68-58</p>
+				<p>тел. 71-555-7</p>
+				<p>ВКонтакте: vk.com/veterinar30</p>
+				<p>Г. Астрахань, ул. Ахшарумова, 3, к. 1 </p>
+			</address>
+		</section>
+		<section class="logo">
+			<img src="img/logo.png" alt="">
+		</section>
+		<section class="name">
+			<p>Ветеринарная клиника </p>
+			<p>«Айболит»</p>
+			<button onclick="showHide('feedback')">Вызвать врача</button>
+		</section>
+	</header>
+
+	<section class="feedback" id="feedback">
+		<section>
+			<p>Чтобы вызвать врача на дом, заполните форму</p>
+			<form action="#">
+				<p>Введите имя</p>
+				<input type="text" placeholder="Введите имя">
+				<p>Телефон</p>
+				<input type="text" placeholder="Телефон">
+				<button>Вызвать врача</button>
+				<p>Мы не передаем Вашу персональную информацию третьим лицам.</p>
+			</form>
+			<section class="close" onclick="showHide('feedback')"></section>
+		</section>
+	</section>
+	
+	<section id="dog">
+		<section>
+			<section class="svp">
+				<p><strong>Скорая</strong></p>
+				<p><strong>ветеринарная</strong></p>
+				<p><strong>помощь</strong></p>
+			</section>
+			<section class="kbu">
+				<p>Каждая минута вашего</p>
+				<p>бездействия</p>
+				<p><strong>УБИВАЕТ</strong></p>
+			</section>
+		</section>
+	</section>
+
+	<section class="nav">
+		<nav>
+			<span><a href="#vet">НАША КЛИНИКА</a></span>
+			<span><a href="#napr">НАШИ УСЛУГИ</a></span>
+			<span><a href="#contacts">НАШИ КОНТАКТЫ</a></span>
+		</nav>
+	</section>
+	
+
+	<section class="info">
+		<section>
+			<section class="infograf">
+				<section>
+					<section><i class="fa fa-history"></i></section>
+				</section>
+				<p>24 часа в сутки</p>
+			</section>
+			<section class="infograf">
+				<section>
+					<section><i class="fa fa-calendar-times-o"></i></section>
+				</section>
+				<p>Без выходных</p>
+			</section>
+			<section class="infograf">
+				<section>
+					<section><i class="fa fa-user-md"></i></section>
+				</section>
+				<p>По городу и области</p>
+			</section>
+			<section class="infograf">
+				<section>
+					<section><i class="fa fa-github"></i></section>
+				</section>
+				<p>Домашние и с/х животные</p>
+			</section>
+			<section class="infograf">
+				<section>
+					<section><i class="fa fa-medkit"></i></section>
+				</section>
+				<p>Лабораторная диагностика</p>
+			</section>
+		</section>
+		<section class="button">
+			<button onclick="showHide('feedback')">Вызвать врача на дом</button>
+		</section>
+	</section>
+
+
+	
+	<section class="vet" id="vet">
+		<h2>Ветеринарная клиника «Айболит»</h2>
+		<p class="underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		<p>Профессиональная ветеринарная помощь пациентам и наиболее комфортные условия для их владельцев. Мы видим положительные результаты и радуемся вместе с вами.</p>
+		<section>
+			<section class="vet_foto">
+				<section class="dark"><img src="img/vet_foto1.jpg" alt=""></section>
+			</section>
+			<section class="vet_foto">
+				<section class="dark"><img src="img/vet_foto2.png" alt=""></section>
+			</section>
+			<section class="vet_foto">
+				<section class="dark"><img src="img/vet_foto3.jpg" alt=""></section>
+			</section>
+			<section class="vet_foto">
+				<section class="dark"><img src="img/vet_foto4.jpg" alt=""></section>
+			</section>
+			<section class="vet_foto">
+				<section class="dark"><img src="img/vet_foto5.jpg" alt=""></section>
+			</section>
+			<section class="vet_foto">
+				<section class="dark"><img src="img/vet_foto6.jpg" alt=""></section>
+			</section>
+		</section>
+		
+	</section>
+
+
+	<section class="haski">
+		<h2>Нет возможности привезти своего питомца?</h2>
+		<h3>Не беда! Вызовите нашего специалиста на дом!</h3>
+		<section class="foto_haski">
+			<img src="img/haski.png" alt="">			
+		</section>
+
+		<p>Животные, как и люди, могут заболеть в любой и, возможно, самый неподходящий момент. Праздник или выходной, день или ночь, – для нас это не имеет значения. Квалифицированные врачи клиники «Айболит» окажут помощь домашнему любимцу в любой момент.</p>
+		<p>В кратчайшие сроки к Вам приедет специалист, который поставит животному диагноз и назначит оптимальное лечение. Вызов ветеринара на дом более комфортен и для питомца, да и к заболеванию не прибавится стресс от поездки.</p>
+		<p class="clear"></p>
+		<h3 class="haski_h3">Если Вам нужны надежность, профессионализм и широкий спектр ветеринарных услуг, – звоните прямо сейчас! </h3>
+		<h3 class="tel">71-555-7</h3>
+		<h3 class="haski_h3">или оставляйте заявку на сайте</h3>
+		<button onclick="showHide('feedback')">Вызвать врача на дом</button>
+	</section>
+
+
+	<section class="naprav" id="napr">
+		<h2>Основные направления ветеринарной помощи на дому</h2>
+		<section>
+			<img src="img/dog-doctor.jpg" alt="">
+			<p>
+				<ul>
+					<li><span>&rarr; </span>Скорая ветеринарная помощь</li>
+					<li><span>&rarr; </span>Терапия</li>
+					<li><span>&rarr; </span>Хирургия</li>
+					<li><span>&rarr; </span>Вакцинация</li>
+					<li><span>&rarr; </span>Кастрация</li>
+					<li><span>&rarr; </span>Лабораторная диагностика</li>
+					<li><span>&rarr; </span>Стрижка собак и кошек</li>
+					<li><span>&rarr; </span>Чистка зубов</li>
+					<li><span>&rarr; </span>Эвтаназия</li>
+					<li><span>&rarr; </span>Медикаменты и корма с доставкой</li>
+				</ul>
+			</p>
+		<p class="clear"></p>
+		</section>
+		<section>
+			<h3>Мы уверены: вас устроят и наши цены, и квалификация специалистов, и отношение к четвероногим или крылатым пациентам! </h3>
+			<button>Узнать стоимость услуги</button>
+		</section>
+		
+	</section>
+
+
+
+	<section class="order">
+		<section>
+			<section class="order_window">
+				<p class="center">Вызов врача на дом</p>
+				<p class="center">Оставьте заявку, и мы свяжемся с </p>
+				<p class="center">Вами через несколько минут</p>
+				<form action="#">
+					<p>Введите имя</p>
+					<input type="text" placeholder="Введите имя">
+					<p>Введите E-mail</p>
+					<input type="text" placeholder="Введите E-mail">
+					<p>Телефон</p>
+					<input type="text" placeholder="Телефон">
+					<button>Вызвать врача</button>
+					<p>Мы не передаем Вашу персональную информацию третьим лицам.</p>
+				</form>
+			</section>
+		</section>
+	</section>
+
+
+	<footer>
+		<section class="map" id="contacts">
+			<iframe src="https://yandex.ru/map-widget/v1/-/CBaaEOuGPA"  frameborder="0"></iframe>
+		</section>
+		<section class="contacts">
+			<p>Ветеринарная клиника «Айболит»</p>
+			<p>Г. Астрахань, ул. Ахшарумова, 3, к. 1</p>
+			<p>Круглосуточно</p>
+			<p>Без выходных</p>
+			<p class="tel">тел. 8-960-852-68-58</p>
+			<p>тел. 71-555-7</p>
+			<p>ВКонтакте: vk.com/veterinar30</p>
+		</section>
+	</footer>
+
+</body>
+</html>
